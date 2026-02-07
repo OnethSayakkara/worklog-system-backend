@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment variables (IMPORTANT!)
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime
+pids/
+*.pid
+*.seed
+
+# Coverage
+coverage/
+
+# Build
+dist/
