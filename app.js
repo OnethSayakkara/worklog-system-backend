@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/projects', require('./routes/projects'));
 
 
 module.exports = app;
