@@ -6,15 +6,10 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
+// Routes
+app.use('/api/auth', require('./routes/auth'));
 
-app.get('/', (req, res) => {
-    res.json({ message: ' Worklog API is running!' });
-});
-
-
-app.get('/test', (req, res) => {
-    res.json({ message: 'Test route working!' });
-});
 
 module.exports = app;
